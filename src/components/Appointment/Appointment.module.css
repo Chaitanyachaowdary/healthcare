@@ -1,0 +1,102 @@
+.appointment {
+  height: 60%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.mainTitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.scheduleSection {
+  margin-bottom: 25px;
+}
+
+.dayTitle {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.appointmentContainer {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.appointmentBox {
+  flex: 1;
+  min-width: 200px;
+  background-color: rgba(4, 148, 243, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.appointmentBox:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.appointmentHeader {
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.appointmentName {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.doctorName {
+  font-size: 1.1rem;
+}
+
+.appointmentTime {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 1.5rem;
+  }
+  
+  .dayTitle {
+    font-size: 1.2rem;
+  }
+  
+  .appointmentBox {
+    min-width: 150px;
+  }
+  
+  .appointmentName, .doctorName {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointment {
+    padding: 15px;
+  }
+  
+  .mainTitle {
+    font-size: 1.3rem;
+  }
+  
+  .appointmentContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .appointmentBox {
+    width: 100%;
+  }
+}

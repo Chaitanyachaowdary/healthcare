@@ -1,0 +1,64 @@
+.dashboardtitle {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: green; */
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Indicates it's clickable */
+}
+
+.dropdownArrow {
+  margin-left: 8px;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.subtitle:hover .dropdownArrow {
+  transform: translateY(2px); /* Slight hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .dropdownArrow {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboardtitle {
+    padding: 15px;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}

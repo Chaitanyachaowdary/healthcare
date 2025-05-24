@@ -1,0 +1,6 @@
+.dashboardBody{
+    height: 91vh;
+    width: 100%;
+    /* background-color: rgb(95, 87, 87); */
+    display: flex;
+}

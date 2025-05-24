@@ -1,0 +1,79 @@
+.calendar {
+  height: 40%;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.monthTitle {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.calendarTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.weekDays th {
+  color: #666;
+  font-weight: normal;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.dayNumbers td {
+  color: #333;
+  font-weight: bold;
+  padding: 8px 0;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.timeSlot td {
+  color: #444;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.timeSlot td:empty {
+  color: #999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .calendar {
+    padding: 15px;
+  }
+  
+  .monthTitle {
+    font-size: 1.3rem;
+  }
+  
+  .weekDays th, .timeSlot td {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar {
+    padding: 10px;
+    overflow-x: auto;
+  }
+  
+  .monthTitle {
+    font-size: 1.1rem;
+  }
+  
+  .calendarTable {
+    font-size: 0.7rem;
+  }
+}

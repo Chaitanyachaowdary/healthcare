@@ -1,0 +1,48 @@
+.activity {
+  height: 30%;
+  width: 100%;
+  /* background-color: brown; */
+  padding: 12px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.count {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.chartContainer {
+  flex: 1;
+  min-height: 0; /* Crucial for flex item sizing */
+}
+
+/* Make bars taller by reducing spacing */
+canvas {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.1rem;
+  }
+  .count {
+    font-size: 0.8rem;
+  }
+}

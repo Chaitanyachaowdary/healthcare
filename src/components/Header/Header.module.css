@@ -1,0 +1,111 @@
+.header {
+  height: 9vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 15%;
+  font-size: 34px;
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+}
+
+.healthText {
+  color: #00e1ff; /* Green color for "Health" */
+}
+
+.careText {
+  color: black; /* Regular color for "care." */
+}
+
+.searchContainer {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  background-color: rgb(247, 243, 243);
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 80%;
+}
+
+.searchIcon {
+  margin-right: 5px;
+  color: #666;
+}
+
+.searchInput {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  background-color: rgb(247, 243, 243);
+}
+
+.bellIcon {
+  cursor: pointer;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+  width: 40%;
+}
+
+.plusIcon {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.profileIcon {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo {
+    width: 30%;
+    font-size: 20px;
+  }
+  
+  .searchContainer {
+    width: 30%;
+  }
+  
+  .searchWrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 40%;
+    font-size: 18px;
+  }
+  
+  .searchContainer {
+    width: 30%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .searchWrapper {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
